@@ -15,7 +15,7 @@
 
 body {
     font: black;
-    background-image: radial-gradient(white, skyblue);
+    background-image: radial-gradient(grey, skyblue);
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 40px;
     margin-right: 40px;
