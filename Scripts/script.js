@@ -3,11 +3,17 @@ var $aboutBtn = $("#aboutBtn");
 var $contactBtn = $("#contactBtn");
 
 $homeBtn.click(function() {
-    $.scrollTo("#headers");
+    $('html, body').animate({
+        scrollTop: ($('#headers').offset().top)
+    },500);;
 });
 $aboutBtn.click(function() {
-    $.scrollTo("#content");
+    $('html, body').animate({
+        scrollTop: ($('#content').offset().top)
+    },500);
 });
 $contactBtn.click(function() {
-    $.scrollTo("#contact")
+    $('html, body').animate({
+        scrollTop: ($('#contact').offset().top)
+    },500);
 });
