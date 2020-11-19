@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn {
+    width: 10%;
+    background-color: bisque;
+}
+
 #bold {
     font-weight: bold;
 }
