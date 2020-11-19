@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#bold {
+    font-weight: bold;
+}
+
 body {
     font: black;
     background-image: radial-gradient(white, skyblue);
