@@ -1,3 +1,7 @@
 var $homeBtn = $("#homeBtn");
-var $resumeBtn = $("#resumeBtn");
+var $aboutBtn = $("#aboutBtn");
 var $contactBtn = $("#contactBtn");
+
+$homeBtn.click.scrollTo("#headers");
+$aboutBtn.click.scrollTo("#content");
+$contactBtn.click.scrollTo("#contact")
