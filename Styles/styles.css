@@ -3,13 +3,15 @@
     width: 40%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px grey;
 }
 
 .btn {
-    background-color: rgb(166, 172, 173);
-    border-radius: 2px;
+    background-color: rgb(206, 213, 214);
+    border-radius: 6px;
     width: 100px;
     height: 50px;
+    font-size: 16px;
 }
 
 #bold {
@@ -17,7 +19,7 @@
 }
 
 body {
-    background-image: radial-gradient(rgb(209, 202, 219), rgb(76, 113, 168));
+    background-image: radial-gradient(rgb(209, 202, 219), rgb(132, 167, 219));
     font: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -27,6 +29,11 @@ body {
     margin-right: 60px;
     padding: 40px 40px 40px 40px;
     border: rgb(166, 172, 173) outset 8px;
+}
+
+img {
+    box-shadow: 5px 5px 6px;
+    border: 4px groove rgb(166, 172, 173);
 }
 
 .borderPics {
@@ -41,12 +48,16 @@ body {
     display: inline-flex;
     float: right;
     width: 40%;
-    padding-left: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 #city {
     display: inline-flex;
     float: left;
     width: 40%;
-    padding-right: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
