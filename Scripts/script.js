@@ -12,3 +12,4 @@ $contactBtn.click(function() {
         scrollTop: ($('#contact').offset().top)
     },500);
 });
+
