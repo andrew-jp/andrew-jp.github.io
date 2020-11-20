@@ -9,9 +9,9 @@
 .btn {
     background-color: rgb(206, 213, 214);
     border-radius: 6px;
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
 }
 
 #bold {
@@ -28,7 +28,7 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     padding: 40px 40px 40px 40px;
-    border: rgb(166, 172, 173) outset 8px;
+    border: rgb(166, 172, 173) ridge 8px;
 }
 
 img {
