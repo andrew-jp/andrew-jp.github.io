@@ -40,10 +40,12 @@ body {
     display: inline-flex;
     float: right;
     width: 40%;
+    padding-left: 15px;
 }
 
 #city {
     display: inline-flex;
     float: left;
     width: 40%;
+    padding-right: 15px;
 }
