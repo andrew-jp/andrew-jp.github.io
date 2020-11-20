@@ -37,4 +37,5 @@ body {
 #bike {
     display: inline-flex;
     float: right;
+    width: 20%;
 }
