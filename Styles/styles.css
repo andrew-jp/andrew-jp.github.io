@@ -39,5 +39,11 @@ body {
 #bike {
     display: inline-flex;
     float: right;
-    width: 20%;
+    width: 40%;
+}
+
+#city {
+    display: inline-flex;
+    float: left;
+    width: 40%;
 }
