@@ -23,7 +23,7 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     padding: 40px 40px 40px 40px;
-    border: darkgreen solid 5px;
+    border: darkgreen outset 8px;
 }
 
 .borderPics {
