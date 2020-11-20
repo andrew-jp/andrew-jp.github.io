@@ -14,11 +14,6 @@
     font-weight: bold;
 }
 
-#bike {
-    display: inline-flex;
-    float: right;
-}
-
 body {
     font: black;
     background-image: radial-gradient(white, skyblue);
@@ -31,10 +26,15 @@ body {
     border: darkgreen solid 5px;
 }
 
-img {
+.borderPics {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     width: 80%;
     display: block;
+}
+
+#bike {
+    display: inline-flex;
+    float: right;
 }
