@@ -64,6 +64,18 @@ img {
     margin-top: 15px;
 }
 
+#classTable {
+    display: flex;
+    float: right;
+    width: 50%;
+}
+
+table, td, th {
+    border: 1px solid white;
+    text-align: center;
+    
+}
+
 a {
     color: rgb(226, 117, 117);
 }
