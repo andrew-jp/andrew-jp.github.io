@@ -8,16 +8,15 @@
     <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div id="headers">
-        <h1>Andrew Pritchett</h1>   
+    <div id="headers">   
+        <h1>Andrew Pritchett</h1>
         <div id="navBar">
-           
            <input type="button" class="btn" value="About" id="aboutBtn">
            <input type="button" class="btn" value="Classes" id="classBtn">
            <input type="button" class="btn" value="Contact" id="contactBtn">
         </div>
      </div>
-     <img src="Images/me.jpg" alt="me" class="borderPics">
+     <img src="Images/me.jpg" alt="me" id="me">
      <div id="content">
          <h2>Personal Info:</h2>
          <ul> 
@@ -66,9 +65,9 @@
             <cite>Ready Player One</cite> (minus the dystopia) come into existence.
         </p>
         <img src="Images/lake.jpg" alt="Lake in Yosemite National Park" id="yosem">
-        <img src="Images/hanoi.jpeg" alt="hanoi" id="city">
+        
         <p>
-            Just below, you can see a cool looking alley in Hanoi, Vietnam. I spent
+            Below, you can see a cool looking alley in Hanoi, Vietnam. I spent
             a couple week there on my own last year, seeing what life was like outside the US. 
             It was an interesting experience to say the least. I met a lot of nice people 
             and ate a lot of good food. I also got to spend a half day in Osaka on the 
@@ -77,6 +76,7 @@
             fairly limited, I'd say that travelling and experiencing other ways of life is a 
             passion of mine.
         </p>
+        <img src="Images/hanoi.jpeg" alt="hanoi" id="city">
         <h2>Class Schedule:</h2>
         <table id="classTable" cellspacing="3" cellpadding="3">
             <tr>
@@ -89,33 +89,33 @@
             </tr>
             <tr>
                 <td>10:00</td>
-                <td rowspan="2">Calculus</td>
-                <td rowspan="2">Calculus</td>
-                <td rowspan="2">Calculus</td>
-                <td rowspan="2">Calculus</td>
-                <td rowspan="2">Calculus</td>
+                <td rowspan="2" class="calc">Calculus</td>
+                <td rowspan="2" class="calc">Calculus</td>
+                <td rowspan="2" class="calc">Calculus</td>
+                <td rowspan="2" class="calc">Calculus</td>
+                <td rowspan="2" class="calc">Calculus</td>
             </tr>
             <tr>
                 <td>10:30</td>
             </tr>
             <tr>
                 <td>11:00</td>
-                <td rowspan="2">Discrete Math</td>
+                <td rowspan="2" class="disc">Discrete Math</td>
                 <td rowspan="2"></td>
-                <td rowspan="2">Discrete Math</td>
+                <td rowspan="2" class="disc">Discrete Math</td>
                 <td rowspan="2"></td>
-                <td rowspan="2">Discrete Math</td>
+                <td rowspan="2" class="disc">Discrete Math</td>
             </tr>
             <tr>
                 <td>11:30</td>
             </tr>
             <tr>
                 <td>12:00</td>
-                <td rowspan="9">Work</td>
+                <td rowspan="9" class="work">Work</td>
                 <td rowspan="9"></td>
-                <td rowspan="9">Work</td>
+                <td rowspan="9" class="work">Work</td>
                 <td rowspan="9"></td>
-                <td rowspan="9">Work</td>
+                <td rowspan="9" class="work">Work</td>
             </tr>
             <tr>
                 <td>1:00</td>
@@ -151,9 +151,9 @@
             </tr>
             <tr>
                 <td>5:30</td>
-                <td rowspan="3">Web Programming</td>
+                <td rowspan="3" class="web">Web Programming</td>
                 <td rowspan="3"></td>
-                <td rowspan="3">Web Programming</td>
+                <td rowspan="3" class="web">Web Programming</td>
                 <td rowspan="3"></td>
                 <td rowspan="3"></td>
             </tr>
