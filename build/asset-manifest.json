@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.4aa0397c.css",
-    "main.js": "/static/js/main.83fc4dc4.js",
+    "main.css": "/static/css/main.105f4f78.css",
+    "main.js": "/static/js/main.d4098688.js",
     "static/js/787.435378d1.chunk.js": "/static/js/787.435378d1.chunk.js",
-    "static/media/bridgerjack.jpg": "/static/media/bridgerjack.36c1710a65359c61489c.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/yosemite.jpg": "/static/media/yosemite.167a7ed54fe4c2751a3f.jpg",
+    "static/media/layback.jpeg": "/static/media/layback.18842812d96302b1fecb.jpeg",
+    "static/media/climbing.jpeg": "/static/media/climbing.e59507a34bf5a235b868.jpeg",
     "index.html": "/index.html",
-    "main.4aa0397c.css.map": "/static/css/main.4aa0397c.css.map",
-    "main.83fc4dc4.js.map": "/static/js/main.83fc4dc4.js.map",
+    "main.105f4f78.css.map": "/static/css/main.105f4f78.css.map",
+    "main.d4098688.js.map": "/static/js/main.d4098688.js.map",
     "787.435378d1.chunk.js.map": "/static/js/787.435378d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa0397c.css",
-    "static/js/main.83fc4dc4.js"
+    "static/css/main.105f4f78.css",
+    "static/js/main.d4098688.js"
   ]
 }
