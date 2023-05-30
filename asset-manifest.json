@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.95ef1c37.css",
-    "main.js": "/static/js/main.d4098688.js",
+    "main.css": "/static/css/main.f8212cbc.css",
+    "main.js": "/static/js/main.d9523e0c.js",
     "static/js/787.435378d1.chunk.js": "/static/js/787.435378d1.chunk.js",
     "static/media/yosemite.jpg": "/static/media/yosemite.167a7ed54fe4c2751a3f.jpg",
     "static/media/layback.jpeg": "/static/media/layback.18842812d96302b1fecb.jpeg",
     "static/media/climbing.jpeg": "/static/media/climbing.e59507a34bf5a235b868.jpeg",
     "index.html": "/index.html",
-    "main.95ef1c37.css.map": "/static/css/main.95ef1c37.css.map",
-    "main.d4098688.js.map": "/static/js/main.d4098688.js.map",
+    "main.f8212cbc.css.map": "/static/css/main.f8212cbc.css.map",
+    "main.d9523e0c.js.map": "/static/js/main.d9523e0c.js.map",
     "787.435378d1.chunk.js.map": "/static/js/787.435378d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95ef1c37.css",
-    "static/js/main.d4098688.js"
+    "static/css/main.f8212cbc.css",
+    "static/js/main.d9523e0c.js"
   ]
 }
