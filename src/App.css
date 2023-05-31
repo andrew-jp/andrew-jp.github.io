@@ -16,23 +16,23 @@ body {
 }
 
 
-h1 {
+h1, h2, .job {
   background: -webkit-linear-gradient(
-    #bceebd, #adabab
+    #45c149, #adabab
   );
+  margin-bottom: 0;
 
 }
 
 h3 {
   background: -webkit-linear-gradient(
-    90deg, #bceebd, #adabab
+    90deg, #45c149, #adabab
   );
 }
 
-h1, h3 {
+h1, h2, h3, .job {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 2vh;
 }
 
 h2 {
@@ -53,18 +53,17 @@ my name and job title
   color: white;
 
   /*box around text*/
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(30, 30, 30);
   opacity: 80%;
-  border-radius: 25px;
+  border-radius: 5vmin;
 
-  margin-left: 28vw;
-  margin-right: 28vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
   margin-top: 15vw;
-
-  min-width: 500px;
 }
 
 .navbar {
+  gap: 10%;
   min-height: 15vh;
   display: flex;
   flex-direction: row;
@@ -75,10 +74,8 @@ my name and job title
 
 .btn {
   color: black;
-  margin : 2vh 5vw;
   min-height: 5vh;
-  min-width: 10vw;
-  font-size: calc(2vmin);
+  font-size: 2vmin;
   background-color: transparent;
   border-color: transparent;
 
@@ -108,11 +105,10 @@ my name and job title
   align-items: center;
   justify-content: center;
 
-
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(30, 30, 30);
   opacity: 90%;
-  border-radius: 20px;
   max-width: 85vw;
+  border-radius: 5vmin;
 
   font-size: calc(8px + 2vmin);
   padding: 2vw;
@@ -121,7 +117,6 @@ my name and job title
 
 
 #footer {
-  min-height: 100vh;
   background-color: #8F7F6B;
   display: flex;
   flex-direction: column;
@@ -136,7 +131,7 @@ my name and job title
   flex-direction: column;
   align-items: center;
 
-  margin-top: 50%;
+  margin-top: 50%; /*Push the links down lower*/
 }
 
 .link {
@@ -172,4 +167,15 @@ title - job
 */
 .sub-list {
   padding: 1vh;
+}
+
+#about-me-inner {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+ul {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: auto;
 }

@@ -1,10 +1,8 @@
 
-function Button({text}) {
+const Button = ({text}) => {
 
   return (
-    <button
-        className="btn"
-      >
+    <button className="btn">
         {text}
     </button>
   );
