@@ -12,7 +12,6 @@ const Li = (props) => {
 const About = () => {
   const targetRef = useRef(null);
 
-
   useEffect(() => {
     const handleScroll = () => {
       const element = targetRef.current;

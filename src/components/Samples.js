@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useRef} from 'react';
 import { marked } from "marked";
 
 import hljs from "highlight.js";
@@ -7,8 +7,44 @@ import ast from "./img/ast.svg"
 
 
 const Samples = () => {
+  const targetRef = useRef(null);
+
   useEffect(() => {
     hljs.highlightAll();
+  }, []);
+
+  useEffect(() => {
+    const handleScrollSamples = () => {
+      const element = targetRef.current;
+
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Calculate the distance from the element's top and bottom to the viewport
+        const topDistance = rect.top;
+        const bottomDistance = windowHeight - rect.bottom;
+
+        // Calculate the opacity based on the distance from the viewport
+        let opacity = .9;
+
+        if (topDistance < 0) {
+          opacity = .9 - Math.abs(topDistance) / windowHeight;
+        }
+
+        else if (bottomDistance < 0) {
+          opacity = .8 - Math.abs(bottomDistance) / windowHeight;
+        }
+
+        element.style.opacity = opacity > 0 ? opacity : 0;
+      }
+    };
+
+    window.addEventListener('scroll', handleScrollSamples);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollSamples);
+    };
   }, []);
 
   const markdown = `
@@ -16,7 +52,7 @@ const Samples = () => {
     
   /**
    * This is a test program for my Compiler.
-   * The SVG below is the resulting Abstract Syntax Tree
+   * The SVG below is the Abstract Syntax Tree
    * created by my project.
   */
   void kxi2023 main() {
@@ -25,7 +61,6 @@ const Samples = () => {
     int u1;
     char u2;
     bool u3;
-    // string u4; // I disallowed this, just use cout << "str" now
 
     cout << u1;
     cout << '\\n';
@@ -54,7 +89,7 @@ const Samples = () => {
       case 0:
           break;
       case 15:
-          cout << "long expression switch condition\n";
+          cout << "long expression switch cond\n";
           break;
       default:
           cout << "switch\\n";
@@ -238,35 +273,52 @@ const Samples = () => {
 
     v1 = v2 = v3;
 
-    if (v1 == 3 && v2 == 3 && v3 == 3) cout << "v1 = v2 = v3 pass\\n";
-    else cout << "v1 = v2 = v3 fail\\n";
+    if (v1 == 3 && v2 == 3 && v3 == 3)
+      cout << "v1 = v2 = v3 pass\\n";
+    else
+      cout << "v1 = v2 = v3 fail\\n";
 
     v1 += v1 = 2;
-    if (v1 == 4) cout << "v1 += v1 = 2 pass\\n";
-    else cout << "v1 += v1 = 2 fail\\n";
+    if (v1 == 4)
+      cout << "v1 += v1 = 2 pass\\n";
+    else
+      cout << "v1 += v1 = 2 fail\\n";
 
     v1 = v2 = v3 = 1 + 2 + 3;
-    if (v1 == 6 && v2 == 6 && v3 == 6) cout << "v1 = v2 = v3 = 1 + 2 + 3 pass\\n";
-    else cout << "v1 = v2 = v3 = 1 + 2 + 3 fail\\n";
+    if (v1 == 6 && v2 == 6 && v3 == 6)
+      cout <<
+      "v1 = v2 = v3 = 1 + 2 + 3 pass\\n";
+    else
+      cout <<
+      "v1 = v2 = v3 = 1 + 2 + 3 fail\\n";
 
     int temp = v1 + v3;
     v1 = v2 = v3 = v1 = v1 + v3;
-    if (v1 == temp) cout << "long \"=\" chain pass\\n";
-
+    if (v1 == temp)
+      cout << "long \"=\" chain pass\\n";
 }
-
   \`\`\`
   `;
 
   return (
-    <div>
-      <pre className="codeSection">
-        <code dangerouslySetInnerHTML={{__html: marked(markdown)}}></code>
-      </pre>
+    <div className="sampleSection">
+      <div className="leftSample">
+        <p ref={targetRef} className="projDesc">
+          &emsp;&emsp;For my senior capstone, I designed and built
+          a compiler that handles a Java-like language. This is a small
+          program I was testing execution on. To the right is an AST
+          representing the source code as a data structure - read by a visitor
+          (one of many) and output in <i>DOT</i> (GraphViz) syntax.
+        </p>
+        <pre className="codeSection">
+          <code dangerouslySetInnerHTML={{__html: marked(markdown)}}></code>
+        </pre>
+      </div>
       <img
         className="svg"
         src={ast}
-        alt="KXI AST"/>
+        alt="KXI AST"
+      />
     </div>
   );
 }

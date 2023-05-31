@@ -153,10 +153,35 @@ ul {
 Samples
 */
 .svg {
-  height: 100vh;
-  width: auto;
-  padding: 2vw;
-  background-color: black;
+  width: 70vw;
+}
+
+.sampleSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  width: 100vw;
+}
+
+.codeSection {
+ margin:1vw;
+ width: auto;
+}
+
+.projDesc {
+  margin: 1vw;
+  padding: 1vw;
+
+  translate: 5vw -4vh;
+  transform: scale(1.2);
+  font-size: 2vw;
+  color: white;
+  line-height: 1.8;
+
+  background-color: rgb(30, 30, 30);
+  opacity: 90%;
+  border-radius: 10%;
 }
 
 
