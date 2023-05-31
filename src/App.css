@@ -15,13 +15,11 @@ body {
   min-width: 100vw;
 }
 
-
 h1, h2, .job {
   background: -webkit-linear-gradient(
     #45c149, #adabab
   );
   margin-bottom: 0;
-
 }
 
 h3 {
@@ -51,6 +49,7 @@ my name and job title
 
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 
   /*box around text*/
   background-color: rgb(30, 30, 30);
@@ -82,9 +81,6 @@ my name and job title
   transition: color;
 }
 
-.btn:press {
-  color:red;
-}
 .btn:hover {
   color:grey;
 }
@@ -110,12 +106,53 @@ my name and job title
   max-width: 85vw;
   border-radius: 5vmin;
 
-  font-size: calc(8px + 2vmin);
+  font-size: calc(10px + 1vw);
   padding: 2vw;
   color: white;
 }
 
+.job-title { 
+  font-size: calc(10px + 2vw);
+  color: #cf6902;
+  font-weight: bold;
+}
 
+.job { 
+  font-size: calc(8px + 2vw);
+}
+
+
+.listItem {
+  font-size: 2vw;
+  padding: 3px;
+}
+
+/*
+Holds an entry in the experience section
+title - job
+-sub
+-sub
+*/
+.sub-list {
+  padding: 1vh;
+}
+
+#about-me-inner {
+  padding-left: 4%;
+  padding-right: 4%;
+  line-height: 2;
+}
+
+ul {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: auto;
+}
+
+
+/*
+FOOTER
+*/
 #footer {
   background-color: #8F7F6B;
   display: flex;
@@ -141,41 +178,4 @@ my name and job title
 
 .footer-cr {
   font-size: 2vmin;
-}
-
-
-.job-title { 
-  font-size: calc(2vw + 6px);
-  color: #cf6902;
-  font-weight: bold;
-}
-
-.job { 
-  font-size: calc(2vw + 2px);
-}
-
-
-.listItem {
-  font-size: 2vw;
-  padding: 3px;
-}
-
-/*holds an entry in the experience section
-title - job
--sub
--sub
-*/
-.sub-list {
-  padding: 1vh;
-}
-
-#about-me-inner {
-  padding-left: 4%;
-  padding-right: 4%;
-}
-
-ul {
-  padding-left: 4%;
-  padding-right: 4%;
-  margin: auto;
 }

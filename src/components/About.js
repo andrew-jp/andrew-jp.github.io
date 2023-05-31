@@ -25,9 +25,6 @@ const About = () => {
         // Calculate the distance from the element's top and bottom to the viewport
         const topDistance = rect.top;
         const bottomDistance = windowHeight - rect.bottom;
-        
-        console.log(`top: ${topDistance}`)
-        console.log(`bottom: ${bottomDistance}`)
 
         // Calculate the opacity based on the distance from the viewport
         let opacity = 1;
@@ -37,7 +34,7 @@ const About = () => {
          * (negative) as we scroll past. 
          */
         if (topDistance < 0) {
-          opacity = 1.5 - Math.abs(topDistance) / windowHeight;
+          opacity = 2 - Math.abs(topDistance) / windowHeight;
         }
         /* This creates the fade-in:
             the value of bottom distance is approaching zero
@@ -55,7 +52,6 @@ const About = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
 
   return (
     <div
@@ -117,16 +113,16 @@ const About = () => {
       </div>
 
       <div className='about-sub' id='about-me'>
-        <h2>
-          About me
-        </h2>
+        <h2>About me</h2>  
+
         <div id='about-me-inner'>
           <p>
             I'm a recent CS graduate in search of a career in software. I possess a wide range
             of skills, I'm an exceptional problem solver, and I'm easy to work with. My favorite
-            language is Python, altough I really enjoy Java too. This site was built using Node.js/React.js.
+            language is Python, altough I love Java too. This site was built using Node.js/React.js.
             I hadn't used react before this and I learned a lot - especially that I
-            shouldn't ever be a designer.
+            shouldn't ever be a designer! While I'm certainly capable of front-end work given a design,
+            what I really enjoy is complex backend work.
           </p>
           <p>
             Outside of my career interests, I'm an avid climber, skier, and cyclist. Climbing is an
