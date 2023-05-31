@@ -149,6 +149,16 @@ ul {
   margin: auto;
 }
 
+/*
+Samples
+*/
+.svg {
+  height: 100vh;
+  width: auto;
+  padding: 2vw;
+  background-color: black;
+}
+
 
 /*
 FOOTER

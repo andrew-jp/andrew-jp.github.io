@@ -1,7 +1,6 @@
-
-import lb from './img/layback.jpeg'
 import React, {useEffect, useRef} from 'react';
-
+import lb from './img/layback.jpeg'
+  
 const Li = (props) => {
   return (
     <li className='listItem'>
@@ -10,9 +9,9 @@ const Li = (props) => {
   )
 }
 
-
 const About = () => {
   const targetRef = useRef(null);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,17 +29,17 @@ const About = () => {
         let opacity = 1;
 
         /**
-         * This creates the fade-out. The topDistance is growing larger
-         * (negative) as we scroll past. 
+         * This creates the fade-out. The topDistance is decreasing
+         * (increasing negative) as we scroll past. 
          */
         if (topDistance < 0) {
-          opacity = 2 - Math.abs(topDistance) / windowHeight;
+          opacity = 1.5 - Math.abs(topDistance) / windowHeight;
         }
         /* This creates the fade-in:
             the value of bottom distance is approaching zero
             as we scroll closer to the bottom of the section */
         else if (bottomDistance < 0) {
-          opacity = 1.25 - Math.abs(bottomDistance) / windowHeight;
+          opacity = 1.5 - Math.abs(bottomDistance) / windowHeight;
         }
 
         element.style.opacity = opacity > 0 ? opacity : 0;
@@ -117,15 +116,14 @@ const About = () => {
 
         <div id='about-me-inner'>
           <p>
-            I'm a recent CS graduate in search of a career in software. I possess a wide range
+            &emsp;&emsp;I'm a recent CS graduate in search of a career in software. I possess a wide range
             of skills, I'm an exceptional problem solver, and I'm easy to work with. My favorite
             language is Python, altough I love Java too. This site was built using Node.js/React.js.
-            I hadn't used react before this and I learned a lot - especially that I
-            shouldn't ever be a designer! While I'm certainly capable of front-end work given a design,
-            what I really enjoy is complex backend work.
+            While I'm certainly capable of front-end work given a design, what I really enjoy is
+            complex backend work.
           </p>
           <p>
-            Outside of my career interests, I'm an avid climber, skier, and cyclist. Climbing is an
+            &emsp;&emsp;Outside of my career interests, I'm an avid climber, skier, and cyclist. Climbing is an
             interesting sport, and it trains the valuable skill of <i>failure</i>. When you're climbing
             something at your limit, you may try it 100 times to succeed the 101st. This is can also be
             extended over days/months/years. Climbing engraiins tenacity and a love for learning, 
