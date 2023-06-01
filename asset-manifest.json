@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad71aa1d.css",
-    "main.js": "/static/js/main.04c1481d.js",
+    "main.css": "/static/css/main.3758d3fa.css",
+    "main.js": "/static/js/main.0042defa.js",
     "static/media/yosemite.jpg": "/static/media/yosemite.167a7ed54fe4c2751a3f.jpg",
     "static/media/layback.jpeg": "/static/media/layback.18842812d96302b1fecb.jpeg",
     "static/media/climbing.jpeg": "/static/media/climbing.e59507a34bf5a235b868.jpeg",
-    "static/media/ast.svg": "/static/media/ast.6a167e4fd89bd90342f69443379fc314.svg",
+    "static/media/ast.svg": "/static/media/ast.e77d681e420236a675f17cfbd56a2c1c.svg",
     "index.html": "/index.html",
-    "main.ad71aa1d.css.map": "/static/css/main.ad71aa1d.css.map",
-    "main.04c1481d.js.map": "/static/js/main.04c1481d.js.map"
+    "main.3758d3fa.css.map": "/static/css/main.3758d3fa.css.map",
+    "main.0042defa.js.map": "/static/js/main.0042defa.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad71aa1d.css",
-    "static/js/main.04c1481d.js"
+    "static/css/main.3758d3fa.css",
+    "static/js/main.0042defa.js"
   ]
 }
