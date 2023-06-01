@@ -152,14 +152,19 @@ ul {
 /*
 Samples
 */
-.svg {
+.graph {
   width: 70vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  
 }
 
 .sampleSection {
   display: flex;
   flex-direction: row;
   justify-content: left;
+
+  background-color: black;
 
   width: 100vw;
 }

@@ -32,13 +32,13 @@ const About = () => {
          * (increasing negative) as we scroll past. 
          */
         if (topDistance < 0) {
-          opacity = 1.5 - Math.abs(topDistance) / windowHeight;
+          opacity = 1.8 - Math.abs(topDistance) / windowHeight;
         }
         /* This creates the fade-in:
             the value of bottom distance is approaching zero
             as we scroll closer to the bottom of the section */
         else if (bottomDistance < 0) {
-          opacity = 1.5 - Math.abs(bottomDistance) / windowHeight;
+          opacity = 1.3 - Math.abs(bottomDistance) / windowHeight;
         }
 
         element.style.opacity = opacity > 0 ? opacity : 0;
@@ -122,15 +122,12 @@ const About = () => {
             complex backend work.
           </p>
           <p>
-            &emsp;&emsp;Outside of my career interests, I'm an avid climber, skier, and cyclist. Climbing is an
-            interesting sport, and it trains the valuable skill of <i>failure</i>. When you're climbing
-            something at your limit, you may try it 100 times to succeed the 101st. This is can also be
-            extended over days/months/years. Climbing engraiins tenacity and a love for learning, 
-            if nothing else.
+            &emsp;&emsp;Outside of my career interests, I'm an avid climber, skier, and cyclist.
+            I'm a big fan of Star Wars, and all sci-fi in general. I'm easy to get along with, 
+            friendly, and great with teams.
           </p>
         </div>
       </div>
-
     </div>
     </div>
   )

@@ -5,7 +5,6 @@ import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
 import ast from "./img/ast.svg"
 
-
 const Samples = () => {
   const targetRef = useRef(null);
 
@@ -22,18 +21,13 @@ const Samples = () => {
         const windowHeight = window.innerHeight;
 
         // Calculate the distance from the element's top and bottom to the viewport
-        const topDistance = rect.top;
-        const bottomDistance = windowHeight - rect.bottom;
+        const dist = windowHeight - rect.bottom;
 
         // Calculate the opacity based on the distance from the viewport
-        let opacity = .9;
+        let opacity = 1;
 
-        if (topDistance < 0) {
-          opacity = .9 - Math.abs(topDistance) / windowHeight;
-        }
-
-        else if (bottomDistance < 0) {
-          opacity = .8 - Math.abs(bottomDistance) / windowHeight;
+        if (dist < 0) {
+          opacity = 1.2 - Math.abs(dist) / windowHeight;
         }
 
         element.style.opacity = opacity > 0 ? opacity : 0;
@@ -48,8 +42,7 @@ const Samples = () => {
   }, []);
 
   const markdown = `
-  \`\`\`java
-    
+  \`\`\`
   /**
    * This is a test program for my Compiler.
    * The SVG below is the Abstract Syntax Tree
@@ -308,14 +301,18 @@ const Samples = () => {
           a compiler that handles a Java-like language. This is a small
           program I was testing execution on. To the right is an AST
           representing the source code as a data structure - read by a visitor
-          (one of many) and output in <i>DOT</i> (GraphViz) syntax.
+          (one of many) and output in <i>DOT</i> (GraphViz) syntax. The colors
+          are a byproduct of my semantic analysis and type checking - when a 
+          node has been validated for type correctness it's marked green. 
+          Generally I don't mark the higher level statements (cout, while)
+          because they're validated elsewhere.
         </p>
         <pre className="codeSection">
           <code dangerouslySetInnerHTML={{__html: marked(markdown)}}></code>
         </pre>
       </div>
       <img
-        className="svg"
+        className="graph"
         src={ast}
         alt="KXI AST"
       />
