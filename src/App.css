@@ -159,47 +159,45 @@ ul {
 }
 
 .radarGraph {
-  max-height: 85vh;
+  max-height: 100vh;
   width: auto;
   padding: 10px;
+  margin: 2vw;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* .scale-in {
+.scale-in {
   animation: scalar 1s ease-in;
   -webkit-animation: scalar 1s ease-in;
 }
 
 @keyframes scalar {
   0% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
   }
   100% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
-} */
+}
 
 
 /*
 Samples
 */
-.graph {
-  padding: 1vw;
-  margin-top: 1vh;
-  max-width: 65vw;
-}
+
 
 .codeSection {
   min-width: 20vw;
   overflow-y:auto;
   overflow-x:auto;
-  margin: 1vw;
+  -webkit-overflow-scrolling: inherit;
 
+  margin: 1vw;
   height: 97%;
 }
 .sampleSection {
@@ -213,6 +211,7 @@ Samples
 .rightSample {
   margin: 1vw;
   overflow-y: auto;
+  -webkit-overflow-scrolling: inherit;
   max-width: 70%;
 }
 
@@ -228,6 +227,12 @@ Samples
   background-color: rgb(30, 30, 30);
   opacity: 90%;
   border-radius: 3vw;
+}
+
+.dotGraph {
+  padding: 1vw;
+  margin-top: 1vh;
+  max-width: 90%;
 }
 
 

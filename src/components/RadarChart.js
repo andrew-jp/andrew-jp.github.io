@@ -42,12 +42,12 @@ const RadarChart = (props) => {
 
   return (
     <div 
-      className={`radarGraph ${isVisible ? 'scale-in' : ''}`}
+      className="graphSection"
       ref={targetRef}
     >
       <Radar
-        className="radarGraph"
-        data={skillData}
+      className={`radarGraph ${isVisible ? 'scale-in' : ''}`}
+      data={skillData}
         options={{
           scales:{
             r: {

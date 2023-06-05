@@ -385,7 +385,7 @@ void kxi2023 main() {
             because they're validated elsewhere.
         </p>
         <img
-          className="graph"
+          className="dotGraph"
           src={ast}
           alt="KXI AST"
         />

@@ -21,11 +21,11 @@ export const SkillData = [
     value: 8
   },
   {
+    label: 'Data Structures',
+    value: 8
+  },
+  {
     label: 'SQL',
     value: 5
   },
-  {
-    label: 'C#',
-    value: 7
-  }
 ]
