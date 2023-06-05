@@ -70,16 +70,6 @@ const About = () => {
         <div id='experienceInner'>
           <ul>
             <li className='subList'>
-              <i className='jobTitle'>6mos - Systems Engineer Intern</i>
-              <b className='job'> - Rapid Reboot</b>
-              <ul>
-                <Li value='Software and hardware testing.'/>
-                <Li value='Assembly and repair of medical devices.'/>
-                <Li value='Designed and prototyped custom CMS.'/>
-              </ul>
-            </li>
-
-            <li className='subList'>
               <i className='jobTitle'>2yrs - Web Developer / Manager</i>
               <b className='job'> - Mountain West Wholesale</b>
               <ul>
