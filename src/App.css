@@ -95,7 +95,7 @@ my name and job title
   padding: 5vh;
 }
 
-.about-sub {
+.aboutSub {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +111,7 @@ my name and job title
   color: white;
 }
 
-.job-title { 
+.jobTitle { 
   font-size: calc(10px + 2vw);
   color: #cf6902;
   font-weight: bold;
@@ -133,11 +133,11 @@ title - job
 -sub
 -sub
 */
-.sub-list {
+.subList {
   padding: 1vh;
 }
 
-#about-me-inner {
+.aboutMeInner {
   padding-left: 4%;
   padding-right: 4%;
   line-height: 2;
@@ -149,6 +149,10 @@ ul {
   margin: auto;
 }
 
+#aboutGraphs {
+  width: auto;
+}
+
 /*
 Samples
 */
@@ -156,32 +160,36 @@ Samples
   padding: 1vw;
   margin-top: 1vh;
   max-width: 65vw;
-
 }
+
 .codeSection {
   min-width: 20vw;
   overflow-y:auto;
   overflow-x:auto;
   margin: 1vw;
 
-  height: 95%;
+  height: 97%;
 }
 .sampleSection {
   display: flex;
   justify-content: center;
   background-color: black;
   max-width: 100vw;
-  overflow: auto;
-  height: 250vh;
+  height: 100vh;
+}
 
+.rightSample {
+  margin: 1vw;
+  overflow-y: auto;
+  max-width: 70%;
 }
 
 .projDesc {
   margin: 1vw;
   padding: 1vw;
-  max-width: 65vw;
+  max-width: 63vw;
 
-  font-size: 2vh;
+  font-size: 16px;
   color: white;
   line-height: 1.8;
 

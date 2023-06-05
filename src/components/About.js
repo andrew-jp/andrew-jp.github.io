@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import lb from './img/layback.jpeg'
-  
+
+
 const Li = (props) => {
   return (
     <li className='listItem'>
@@ -12,6 +13,7 @@ const Li = (props) => {
 const About = () => {
   const targetRef = useRef(null);
 
+  /** Fade-in with scroll for about section */
   useEffect(() => {
     const handleScroll = () => {
       const element = targetRef.current;
@@ -31,13 +33,13 @@ const About = () => {
          * This creates the fade-out. The topDistance is decreasing
          * (increasing negative) as we scroll past. 
          */
-        if (topDistance < 0) {
-          opacity = 1.8 - Math.abs(topDistance) / windowHeight;
-        }
+        // if (topDistance < 0) {
+        //   opacity = 1.8 - Math.abs(topDistance) / windowHeight;
+        // }
         /* This creates the fade-in:
             the value of bottom distance is approaching zero
             as we scroll closer to the bottom of the section */
-        else if (bottomDistance < 0) {
+        if (bottomDistance < 0) {
           opacity = 1.3 - Math.abs(bottomDistance) / windowHeight;
         }
 
@@ -51,6 +53,8 @@ const About = () => {
     };
   }, []);
 
+
+
   return (
     <div
       className='content'
@@ -60,13 +64,13 @@ const About = () => {
     
     <div ref={targetRef} className='fade-in'>
 
-      <div className='about-sub' id='experience'>
+      <div className='aboutSub' id='experience'>
         <h2>Experience</h2>
 
-        <div id='experience-inner'>
+        <div id='experienceInner'>
           <ul>
-            <li className='sub-list'>
-              <i className='job-title'>6mos - Systems Engineer Intern</i>
+            <li className='subList'>
+              <i className='jobTitle'>6mos - Systems Engineer Intern</i>
               <b className='job'> - Rapid Reboot</b>
               <ul>
                 <Li value='Software and hardware testing.'/>
@@ -75,8 +79,8 @@ const About = () => {
               </ul>
             </li>
 
-            <li className='sub-list'>
-              <i className='job-title'>2yrs - Web Developer / Manager</i>
+            <li className='subList'>
+              <i className='jobTitle'>2yrs - Web Developer / Manager</i>
               <b className='job'> - Mountain West Wholesale</b>
               <ul>
                 <Li value='Managed website and internal real estate webapp development.'/>
@@ -87,8 +91,8 @@ const About = () => {
               </ul>
             </li>
 
-            <li className='sub-list'>
-              <i className='job-title'>4yrs - Foreman</i>
+            <li className='subList'>
+              <i className='jobTitle'>4yrs - Foreman</i>
               <b className='job'> - Tile Ram</b>
               <ul>
                 <Li value='Performed and oversaw $3m+ of operations over 4 years.'/>
@@ -97,8 +101,8 @@ const About = () => {
               </ul>
             </li>
 
-            <li className='sub-list'>
-              <i className='job-title'>1yr - Gearhead</i>
+            <li className='subList'>
+              <i className='jobTitle'>1yr - Gearhead</i>
               <b className='job'> - Backcountry.com</b>
               <ul>
                 <Li value='Handled customer service and sales via phone and chat.'/>
@@ -110,10 +114,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className='about-sub' id='about-me'>
+      <div className='aboutSub' id='aboutMe'>
         <h2>About me</h2>  
 
-        <div id='about-me-inner'>
+        <div className='aboutMeInner'>
           <p>
             &emsp;&emsp;I'm a recent CS graduate in search of a career in software. I possess a wide range
             of skills, I'm an exceptional problem solver, and I'm easy to work with. My favorite

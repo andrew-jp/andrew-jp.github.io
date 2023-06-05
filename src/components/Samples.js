@@ -376,8 +376,7 @@ void kxi2023 main() {
       <div className='rightSample'>
         <p ref={targetRef} className="projDesc">
             &emsp;&emsp;For my senior capstone, I designed and built
-            a compiler that handles a Java-like language. The code is KXI, a UVU
-            developed programming language. To the right is an AST
+            a compiler that handles a Java-like language. To the right is an AST
             representing the source code as a data structure - read by a visitor
             (one of many) and output in <i>DOT</i> (GraphViz) syntax. The colors
             are a byproduct of my semantic analysis and type checking - when a 
