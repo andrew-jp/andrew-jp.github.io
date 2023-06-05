@@ -1,43 +1,31 @@
 export const SkillData = [
   {
-    id:0,
     label: 'Python',
-    value: 9,
+    value: 10
   },
   {
-    id: 1,
-    label: 'JavaScript',
-    value: 6
-  },
-  {
-    id: 2,
     label: 'CSS',
-    value: 5
-  },
-  {
-    id: 3,
-    label: 'React.js',
     value: 6
-  },
-  {
-    id: 4,
-    label: 'Java',
-    value: 7
   },
 
   {
-    id: 5,
-    label: 'SQL',
-    value: 5, 
+    label: 'JavaScript/React.js',
+    value: 7
   },
   {
-    id: 6,
-    label: 'UNIX',
-    value: 4,
+    label: 'C++',
+    value: 3 
   },
   {
-    id: 7,
-    label: 'Software Patterns',
+    label: 'Java',
     value: 8
+  },
+  {
+    label: 'SQL',
+    value: 5
+  },
+  {
+    label: 'C#',
+    value: 7
   }
 ]
