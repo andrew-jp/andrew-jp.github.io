@@ -30,9 +30,8 @@ body {
   margin: 1vw;
   overflow-y: auto;
   -webkit-overflow-scrolling: inherit;
-  flex-basis: 35%;
+  flex-basis: 40%;
   min-width: 400px;
-  max-height: 280vh;
 }
 
   .code-section {
@@ -56,5 +55,4 @@ body {
     padding: 1vw;
 
     max-width: 90vw;
-    flex-grow: 9999;
   }
