@@ -1,5 +1,6 @@
 import NavBar from "./NavBar"
 import yose from './img/yosemite.jpg'
+import "../styles/Header.css"
 
 const Header = () => {
   return (

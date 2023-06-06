@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from "react"
 import { Radar } from "react-chartjs-2"
 import { SkillData } from './Data';
 import {Chart as ChartJS} from 'chart.js/auto'
-
+import '../styles/RadarChart.css'
 
 const RadarChart = (props) => {
   /* Handles the scroll animation for the graph */
@@ -15,12 +15,12 @@ const RadarChart = (props) => {
 
       if (isVisible) {
         setIsVisible(true);
-        window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener
+        window.removeEventListener('chartScroll', handleScroll); // Remove the scroll event listener
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('chartScroll', handleScroll);
+    return () => window.removeEventListener('chartScroll', handleScroll);
   }, []);
 
   /**

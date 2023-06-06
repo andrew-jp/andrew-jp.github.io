@@ -1,4 +1,5 @@
 import climbing from './img/climbing.jpeg'
+import '../styles/Footer.css'
 
 const Footer = () => {
   const scrollTo = (ref) => {

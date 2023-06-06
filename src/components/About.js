@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import lb from './img/layback.jpeg'
-
+import '../styles/About.css'
 
 const Li = (props) => {
   return (
@@ -62,7 +62,7 @@ const About = () => {
       style={{backgroundImage: `url(${lb})`}}
     >
     
-    <div ref={targetRef} className='fade-in'>
+    <div ref={targetRef} className='about-fade-in'>
 
       <div className='aboutSub' id='experience'>
         <h2>Experience</h2>

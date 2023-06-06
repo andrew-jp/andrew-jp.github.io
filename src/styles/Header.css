@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1, h2, .job {
+  background: -webkit-linear-gradient(
+    #45c149, #adabab
+  );
+  margin-bottom: 0;
+}
+
+h3 {
+  background: -webkit-linear-gradient(
+    90deg, #45c149, #adabab
+  );
+}
+
+h1, h2, h3, .job {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  margin: 0;
+}
+
+/*
+This is for the header text
+my name and job title
+*/
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+
+  /*box around text*/
+  background-color: rgb(30, 30, 30);
+  opacity: 80%;
+  border-radius: 5vmin;
+
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 15vw;
+}
+
+.navbar {
+  gap: 10%;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 8vh;
+}
+
+.btn {
+  color: black;
+  min-height: 5vh;
+  font-size: 2vmin;
+  background-color: transparent;
+  border-color: transparent;
+
+  transition: color;
+}
+
+.btn:hover {
+  color:grey;
+}

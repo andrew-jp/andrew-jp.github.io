@@ -4,26 +4,26 @@ export const SkillData = [
     value: 10
   },
   {
+    label: 'Data Structures',
+    value: 8
+  },
+  {
     label: 'CSS',
     value: 6
-  },
-
-  {
-    label: 'JavaScript/React.js',
-    value: 7
   },
   {
     label: 'C++',
     value: 3 
   },
   {
+    label: 'JavaScript/React.js',
+    value: 7
+  },
+  {
     label: 'Java',
     value: 8
   },
-  {
-    label: 'Data Structures',
-    value: 8
-  },
+
   {
     label: 'SQL',
     value: 5
