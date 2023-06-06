@@ -13,7 +13,7 @@ export const SkillData = [
   },
   {
     label: 'C++',
-    value: 3 
+    value: 8 
   },
   {
     label: 'JavaScript/React.js',
