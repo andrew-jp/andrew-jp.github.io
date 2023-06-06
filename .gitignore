@@ -4,4 +4,4 @@ public*
 package-lock.json
 package.json
 src/.DS_Store
-.DS_Store
+*.DS_Store
