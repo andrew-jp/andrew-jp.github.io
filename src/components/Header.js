@@ -5,7 +5,7 @@ import yose from './img/yosemite.jpg'
 const Header = (props) => {
   return (
     <div
-      className='content'
+      className='header-container'
       id='header'
       style={{
         backgroundImage: `url(${yose})`,

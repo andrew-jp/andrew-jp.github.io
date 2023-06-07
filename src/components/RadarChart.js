@@ -1,28 +1,10 @@
-import React, {useState, useRef, useEffect} from "react"
+import React, {useState} from "react"
 import { Radar } from "react-chartjs-2"
 import { SkillData } from './Data';
 import {Chart as ChartJS} from 'chart.js/auto'
 import '../styles/RadarChart.css'
 
-const RadarChart = (props) => {
-  /* Handles the scroll animation for the graph */
-  const [isVisible, setIsVisible] = useState(false);
-  const targetRef = useRef(null);
-  useEffect(() => {
-    const handleScroll = () => {
-      const { top } = targetRef.current.getBoundingClientRect();
-      const isVisible = top <= window.innerHeight * 0.75; // Adjust the threshold as needed
-
-      if (isVisible) {
-        setIsVisible(true);
-        window.removeEventListener('chartScroll', handleScroll); // Remove the scroll event listener
-      }
-    };
-
-    window.addEventListener('chartScroll', handleScroll);
-    return () => window.removeEventListener('chartScroll', handleScroll);
-  }, []);
-
+const RadarChart = () => {
   /**
    * State data for graphs 
    * Basically just formatted for GraphJS
@@ -43,12 +25,21 @@ const RadarChart = (props) => {
   return (
     <div 
       className="graphSection"
-      ref={targetRef}
+      id="skills"
     >
       <Radar
-      className={`radarGraph ${isVisible ? 'scale-in' : ''}`}
+      className="radar-graph"
       data={skillData}
         options={{
+          plugins: {
+            legend: {
+              labels: {
+                font: {
+                    size: 18
+                }
+              }
+            }
+          },
           scales:{
             r: {
               animate: true,
@@ -56,8 +47,8 @@ const RadarChart = (props) => {
               max: 10,
               color: "white",
               pointLabels: {
-                borderRadius: 2,
-                backdropColor: "rgba(50,50,50,.1)",
+                borderRadius: 5,
+                backdropColor: "rgba(50,50,50,.5)",
                 color: [
                   "#1abc9c",
                   "#3498db",

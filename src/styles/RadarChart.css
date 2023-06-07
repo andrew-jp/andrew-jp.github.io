@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.radarGraph {
+.radar-graph {
   max-height: 100vh;
   width: auto;
   padding: 10px;
@@ -17,20 +17,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.scale-in {
-  animation: scalar 1s ease-in;
-  -webkit-animation: scalar 1s ease-in;
-}
-
-@keyframes scalar {
-  0% {
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  }
-  100% {
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
 }

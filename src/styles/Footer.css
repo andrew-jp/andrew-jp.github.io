@@ -1,18 +1,11 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-.content {
+.footer-container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
 }
 
 #footer {
@@ -35,7 +28,7 @@ body {
 
 .link {
   color: #61dafb;
-  padding: 1vw;
+  padding: 1vmin;
 }
 
 .footer-cr {

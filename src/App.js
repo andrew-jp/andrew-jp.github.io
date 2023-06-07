@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Samples from './components/Samples';
 import RadarChart from './components/RadarChart';
 
+
 function App() {
 
   return (
@@ -14,10 +15,10 @@ function App() {
           myName='Andrew Pritchett' 
           myTitle='Software Developer'
       />
-      < About id='abt' />
+      < About />
       < RadarChart />
-      < Samples id='samples' />
-      < Footer id='footer'/>
+      < Samples />
+      < Footer />
     </div>
   );
 }

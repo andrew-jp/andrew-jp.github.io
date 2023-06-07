@@ -1,9 +1,18 @@
 
-const Button = ({text}) => {
+const Button = (props) => {
 
+  const handleClick = () => {
+    const element = props.ref.current;
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
-    <button className="btn">
-        {text}
+    <button className="button">
+        {props.text}
     </button>
   );
 }

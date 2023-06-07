@@ -1,0 +1,25 @@
+.navbar {
+  gap: 10%;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 8vh;
+}
+
+.button {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  color: black;
+  min-height: 5vh;
+  font-size: 2vmin;
+  background-color: transparent;
+  border-color: transparent;
+
+  transition: color;
+}
+
+.button:hover {
+  color:grey;
+}

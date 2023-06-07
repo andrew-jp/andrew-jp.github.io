@@ -1,18 +1,11 @@
 import climbing from './img/climbing.jpeg'
 import '../styles/Footer.css'
 
-const Footer = () => {
-  const scrollTo = (ref) => {
-    if (ref && ref.current /* + other conditions */) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
-  
+const Footer = () => {  
   return (
-    <footer
-      className="content"
+    <div
+      className="footer-container"
       id="footer"
-      ref={scrollTo}
       style={{
         backgroundImage: `url(${climbing})`,
       }}>
@@ -33,7 +26,7 @@ const Footer = () => {
         </a>
         <p className='footer-cr'>Copyright 2023 ©</p>
       </div>
-    </footer>
+    </div>
 
   )
 }
