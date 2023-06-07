@@ -23,7 +23,7 @@
   -webkit-overflow-scrolling: inherit;
   max-height: 100vh;
   margin: 1vmin;
-  font-size: 14px;
+  font-size: calc(4px + 1vmax);
 }
 
 .right-sample {
