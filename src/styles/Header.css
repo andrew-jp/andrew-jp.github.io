@@ -44,3 +44,15 @@ my name and job title
   padding: 3vmin;
   margin-top: 20vh; /*push down*/
 }
+
+
+.min-header-btn {
+  position: absolute;
+  bottom: 1vmin;
+  margin-bottom: 1vmin;
+
+  opacity: 60%;
+  background-color: none;
+  border-radius: 1vmin;
+  border-style: hidden;
+}

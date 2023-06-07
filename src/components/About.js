@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import lb from './img/layback.jpeg'
 import '../styles/About.css'
 
@@ -49,7 +49,17 @@ const About = () => {
     };
   }, []);
 
-
+  const [btnName, setBtnName] = useState('Hide Content');
+  const [visState, setVisState] = useState('visible');
+  const minAbout = () => {
+    if (btnName === 'Hide Content') {
+      setVisState('hidden')
+      setBtnName('Show Content')  
+    } else {
+      setVisState('visible')
+      setBtnName('Hide Content')  
+    }
+  }
 
   return (
     <div
@@ -58,10 +68,16 @@ const About = () => {
       style={{backgroundImage: `url(${lb})`}}
     >
       
-      <div ref={targetRef} className='about-fade-in'>
-        <div className='about-sub' id='about-me'>
+      <div
+        className='about-fade-in'
+        ref={targetRef}
+        style={{visibility: `${visState}`}}  
+      >
+        <div
+          className='about-sub'
+          id='about-me'
+        >
           <h1>About me</h1>  
-
           <div className='about-me-inner'>
             <p>
               &emsp;&emsp;I'm a recent CS graduate in search of a career in software. I possess a wide range
@@ -77,7 +93,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        
+
         <div className='about-sub' id='experience'>
           <h1>Experience</h1>
 
@@ -120,6 +136,12 @@ const About = () => {
 
 
       </div>
+      <button
+        className='min-about-btn'
+        onClick={minAbout}
+      >
+        {btnName}
+      </button>
     </div>
   )
 }
