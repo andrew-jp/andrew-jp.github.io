@@ -17,33 +17,25 @@
   border-radius: 3vw;
 }
 
-.left-sample {
-  justify-content: center;
-  margin: 1vw;
+.code-section {
   overflow-y: auto;
+  overflow-x:auto;
   -webkit-overflow-scrolling: inherit;
-  flex-basis: 50%;
-  min-width: 400px;
+  max-height: 100vh;
+  margin: 1vmin;
+  font-size: 14px;
 }
-
-  .code-section {
-    overflow-y:auto;
-    overflow-x:auto;
-    -webkit-overflow-scrolling: inherit;
-    max-height: 100%;
-    margin: 1vw;
-    font-size: 14px;
-  }
 
 .right-sample {
   margin: 1vw;
   overflow-y: auto;
   -webkit-overflow-scrolling: inherit;
-  flex-basis: 50%;
+  flex-basis: 60%;
   flex-grow: 9999;
 }
 
-  .dot-graph {
-    margin: 2vmin;
-    max-width: 95%;
-  }
+.dot-graph {
+  min-width: 500px;
+  margin: 2vmin;
+  max-width: 95%;
+}

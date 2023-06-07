@@ -102,7 +102,7 @@ const About = () => {
               <li className='sub-list'>
                 <i className='job-title'>2yrs - Web Developer / Manager</i>
                 <b className='job'> - Mountain West Wholesale</b>
-                <ul>
+                <ul className='sub-sub-list'>
                   <Li value='Managed website and internal real estate webapp development.'/>
                   <Li value='Designed and built Python webscraper for use with real estate webapp.'/>
                   <Li value='Managed multiple employees and 20+ subcontractors on a daily basis.'/>
@@ -113,7 +113,7 @@ const About = () => {
               <li className='sub-list'>
                 <i className='job-title'>4yrs - Foreman</i>
                 <b className='job'> - Tile Ram</b>
-                <ul>
+                <ul className='sub-sub-list'>
                   <Li value='Performed and oversaw $3m+ of operations over 4 years.'/>
                   <Li value='Managed daily operations at site, keeping team production moving at optimal pace.'/>
                   <Li value='Managed employees and interacted with customers to demonstrate high standards and mitigate issues effectively.'/>
@@ -123,7 +123,7 @@ const About = () => {
               <li className='sub-list'>
                 <i className='job-title'>1yr - Gearhead</i>
                 <b className='job'> - Backcountry.com</b>
-                <ul>
+                <ul className='sub-sub-list'>
                   <Li value='Handled customer service and sales via phone and chat.'/>
                   <Li value='Resolved customer escalations with poise.'/>
                   <Li value='Ranked top 5 in sales every month worked.'/>

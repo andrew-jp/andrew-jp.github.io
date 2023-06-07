@@ -111,7 +111,8 @@ void kxi2023 main() {
         case 0:
             break;
         case 1:
-            int y = 1 + 2 * 3 / 4 + clsA.a - clsA.b;
+            int y = 1 + 2 * 3 / 4
+                    + clsA.a - clsA.b;
             clsA.a += y - clsA.b;
         default:
             break;

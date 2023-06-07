@@ -67,8 +67,14 @@ title - job
 -sub
 -sub
 */
+
 .sub-list {
-  padding: 1vh;
+  padding: 1vmin;
+}
+
+.sub-sub-list {
+  padding-left: 3vmin;
+  padding-right: 3vmin;
 }
 
 .experience-inner {
