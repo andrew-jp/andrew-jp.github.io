@@ -77,8 +77,6 @@ class A {
 class B {
   public A classFunc(A a, B b) {
     A anotherOne = new A(3, 4);
-    anotherOne = b.classFunc(new A(1,2), new B());
-
     return anotherOne;
   }
 

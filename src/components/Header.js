@@ -1,24 +1,28 @@
 import NavBar from "./NavBar"
-import yose from './img/yosemite.jpg'
 import "../styles/Header.css"
+import yose from './img/yosemite.jpg'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div
       className='content'
       id='header'
       style={{
         backgroundImage: `url(${yose})`,
-      }}>
+      }}
+    >
+
       <NavBar />
+
       <div className='header-content'>
           <h1>
-            Andrew Pritchett
+            {props.myName}
           </h1>
-          <h3>
-            Software Engineer
-          </h3>
+          <h2>
+            {props.myTitle}
+          </h2>
       </div>
+      
     </div>
   )
 }

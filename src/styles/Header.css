@@ -15,28 +15,12 @@ body {
   min-width: 100vw;
 }
 
-h1, h2, .job {
-  background: -webkit-linear-gradient(
-    #45c149, #adabab
-  );
-  margin-bottom: 0;
-}
-
-h3 {
-  background: -webkit-linear-gradient(
-    90deg, #45c149, #adabab
-  );
-}
-
-h1, h2, h3, .job {
+h1, h2, h3 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} 
 
-h2 {
-  margin: 0;
-}
 
 /*
 This is for the header text

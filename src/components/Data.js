@@ -13,7 +13,7 @@ export const SkillData = [
   },
   {
     label: 'C++',
-    value: 8 
+    value: 7
   },
   {
     label: 'JavaScript/React.js',
@@ -21,11 +21,11 @@ export const SkillData = [
   },
   {
     label: 'Java',
-    value: 8
+    value: 9
   },
 
   {
     label: 'SQL',
-    value: 5
+    value: 6
   },
 ]

@@ -10,7 +10,10 @@ function App() {
 
   return (
     <div className='App'>
-      < Header id='header' />
+      < Header
+          myName='Andrew Pritchett' 
+          myTitle='Software Developer'
+      />
       < About id='abt' />
       < RadarChart />
       < Samples id='samples' />
