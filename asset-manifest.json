@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.00bc2fb7.css",
+    "main.css": "/static/css/main.7aca3d31.css",
     "main.js": "/static/js/main.f8b3387e.js",
     "static/media/yosemite.jpg": "/static/media/yosemite.167a7ed54fe4c2751a3f.jpg",
     "static/media/layback.jpeg": "/static/media/layback.18842812d96302b1fecb.jpeg",
     "static/media/climbing.jpeg": "/static/media/climbing.e59507a34bf5a235b868.jpeg",
     "static/media/ast.svg": "/static/media/ast.4cab07d374c9d4d6d53280dd50291d2a.svg",
     "index.html": "/index.html",
-    "main.00bc2fb7.css.map": "/static/css/main.00bc2fb7.css.map",
+    "main.7aca3d31.css.map": "/static/css/main.7aca3d31.css.map",
     "main.f8b3387e.js.map": "/static/js/main.f8b3387e.js.map"
   },
   "entrypoints": [
-    "static/css/main.00bc2fb7.css",
+    "static/css/main.7aca3d31.css",
     "static/js/main.f8b3387e.js"
   ]
 }
