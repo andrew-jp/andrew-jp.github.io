@@ -2,13 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import lb from './img/layback.jpeg'
 import '../styles/About.css'
 
-const Li = (props) => {
-  return (
-    <li className='list-item'>
-      {props.value}
-    </li>
-  )
-}
+import Job from './Job.js';
 
 const About = () => {
   const targetRef = useRef(null);
@@ -24,7 +18,7 @@ const About = () => {
 
         // Calculate the distance from the element's top and bottom to the viewport
         const topDistance = rect.top;
-        const bottomDistance = windowHeight - rect.bottom;
+        // const bottomDistance = windowHeight - rect.bottom;
 
         // Calculate the opacity based on the distance from the viewport
         let opacity = 1;
@@ -99,37 +93,41 @@ const About = () => {
 
           <div id='experience-inner'>
             <ul>
-              <li className='sub-list'>
-                <i className='job-title'>2yrs - Web Developer / Manager</i>
-                <b className='job'> - Mountain West Wholesale</b>
-                <ul className='sub-sub-list'>
-                  <Li value='Managed website and internal real estate webapp development.'/>
-                  <Li value='Designed and built Python webscraper for use with real estate webapp.'/>
-                  <Li value='Managed multiple employees and 20+ subcontractors on a daily basis.'/>
-                  <Li value='Increased sales 20%, sold average $75k/month.'/>
-                </ul>
-              </li>
+              <Job
+                title='Web Developer'
+                company='Mountain West Wholesale'
+                time='2yrs'
+                experience={[
+                  'Built Python/Selenium web scraper for compiling valuable real estate data.',
+                  'Developed and maintained company site to increase web interactions.',
+                  'Utilized SEO to drive traffic and maximize exposure.',
+                  'Built a small C#/SQL inventory manager to improve tracking and accountability.'
+                ]}
+              />
 
-              <li className='sub-list'>
-                <i className='job-title'>4yrs - Foreman</i>
-                <b className='job'> - Tile Ram</b>
-                <ul className='sub-sub-list'>
-                  <Li value='Performed and oversaw $3m+ of operations over 4 years.'/>
-                  <Li value='Managed daily operations at site, keeping team production moving at optimal pace.'/>
-                  <Li value='Managed employees and interacted with customers to demonstrate high standards and mitigate issues effectively.'/>
-                </ul>
-              </li>
+              <Job
+                title='Foreman'
+                company='Tile Ram'
+                time='4yrs'
+                experience={[
+                  'Performed and oversaw $3m+ of operations over 4 years.',
+                  'Managed daily operations at site, keeping team production moving at optimal pace.',
+                  'Managed employees and interacted with customers to demonstrate high standards and mitigate issues effectively.'
+                ]}
+              />
 
-              <li className='sub-list'>
-                <i className='job-title'>1yr - Gearhead</i>
-                <b className='job'> - Backcountry.com</b>
-                <ul className='sub-sub-list'>
-                  <Li value='Handled customer service and sales via phone and chat.'/>
-                  <Li value='Resolved customer escalations with poise.'/>
-                  <Li value='Ranked top 5 in sales every month worked.'/>
-                  <Li value='Never missed a productivity quota.'/>
-                </ul>
-              </li>
+              <Job 
+                title='Gearhead'
+                company='Backcountry.com'
+                time='1yr'
+                experience={[
+                  'Handled customer service and sales via phone and chat.',
+                  'Resolved customer escalations with poise.',
+                  'Ranked top 5 in sales every month worked.',
+                  'Never missed a productivity quota.'
+                ]}
+              />
+
             </ul>
           </div>
         </div>
