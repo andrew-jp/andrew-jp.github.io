@@ -75,6 +75,26 @@ const About = () => {
           </div>
         </div>
 
+        <div className='about-sub' id='education'>
+          <h1>Education</h1>
+
+          <div id='experience-inner'>
+            <ul>
+              <Job
+                time='2023'
+                title='B.S. Computer Science'
+                company='Utah Valley University'
+                experience={[
+                  'Cum Laude',
+                  '3.6 GPA',
+                  'Captone: built a compiler, assembler and virtual machine.',
+                ]}
+              />
+            </ul>
+          </div>
+        </div>
+
+
         <div className='about-sub' id='experience'>
           <h1>Experience</h1>
 
