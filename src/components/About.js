@@ -15,24 +15,11 @@ const About = () => {
       if (element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-
-        // Calculate the distance from the element's top and bottom to the viewport
         const topDistance = rect.top;
-        // const bottomDistance = windowHeight - rect.bottom;
-
-        // Calculate the opacity based on the distance from the viewport
         let opacity = 1;
-
-        /* This creates the fade-in */
         if (topDistance > 0) {
           opacity = 1 - Math.abs(topDistance) / windowHeight;
         }
-
-        /* This creates the fade-out */
-        // if (bottomDistance > 0) {
-        //   opacity = 1.2 - Math.abs(bottomDistance) / windowHeight;
-        // }
-
         element.style.opacity = opacity > 0 ? opacity : 0;
       }
     };
