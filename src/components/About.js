@@ -103,12 +103,12 @@ const About = () => {
               <Job
                 title='Web Developer'
                 company='Mountain West Wholesale'
-                time='2yrs'
+                time='3yrs'
                 experience={[
-                  'Built Python/Selenium web scraper for compiling valuable real estate data.',
-                  'Developed and maintained company site to increase web interactions.',
-                  'Utilized SEO to drive traffic and maximize exposure.',
-                  'Built a small C#/SQL inventory manager to improve tracking and accountability.'
+                  'Built application utilizing Python, Selenium, and MongoDB to gather valuable foreclosure data.',
+                  'Compiled and analyzed sales data to balance ordering by throughput – stocking more of what sells.',
+                  'Developed and implemented streamlined warehouse processes to reduce waste and increase inventory tracking.',
+                  'Built C#/SQL inventory manager to improve tracking and accountability.'
                 ]}
               />
 
@@ -117,9 +117,9 @@ const About = () => {
                 company='Tile Ram'
                 time='4yrs'
                 experience={[
-                  'Performed and oversaw $3m+ of operations over 4 years.',
-                  'Managed daily operations at site, keeping team production moving at optimal pace.',
-                  'Managed employees and interacted with customers to demonstrate high standards and mitigate issues effectively.'
+                  'Managed millions of dollars in demolition operations over 4 years. ',
+                  'Oversaw daily operations at site, keeping team production moving at optimal pace',
+                  'Reworked positions and workflow based on individual abilities and production targets. '
                 ]}
               />
 
