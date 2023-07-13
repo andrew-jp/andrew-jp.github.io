@@ -87,7 +87,11 @@ const About = () => {
                 experience={[
                   'Cum Laude',
                   '3.6 GPA',
-                  'Captone: built a compiler, assembler and virtual machine.',
+                  'Projects:',
+                  'Captone - built a compiler, assembler and virtual machine.',
+                  'Python data analysis of 20 years of Iron Man Championship data.',
+                  'SQL database design and construction',
+                  '4 player chess - built in Python'
                 ]}
               />
             </ul>
@@ -101,14 +105,14 @@ const About = () => {
           <div id='experience-inner'>
             <ul>
               <Job
-                title='Web Developer'
+                title='Data Engineer and Manageer'
                 company='Mountain West Wholesale'
                 time='3yrs'
                 experience={[
                   'Built application utilizing Python, Selenium, and MongoDB to gather valuable foreclosure data.',
                   'Compiled and analyzed sales data to balance ordering by throughput – stocking more of what sells.',
                   'Developed and implemented streamlined warehouse processes to reduce waste and increase inventory tracking.',
-                  'Built C#/SQL inventory manager to improve tracking and accountability.'
+                  'Boosted sales 15% qoq using modern web marketing tactics and toolkits.'
                 ]}
               />
 
@@ -117,9 +121,9 @@ const About = () => {
                 company='Tile Ram'
                 time='4yrs'
                 experience={[
-                  'Managed millions of dollars in demolition operations over 4 years. ',
+                  'Led commercial and residential demolition operations over 4 years in California, Utah, Nevada, and Idaho.',
                   'Oversaw daily operations at site, keeping team production moving at optimal pace',
-                  'Reworked positions and workflow based on individual abilities and production targets. '
+                  'Reworked positions and workflow based on individual abilities and production targets.'
                 ]}
               />
 
@@ -138,8 +142,6 @@ const About = () => {
             </ul>
           </div>
         </div>
-
-
       </div>
       <button
         className='min-about-btn'
