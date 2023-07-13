@@ -16,14 +16,14 @@ const Samples = () => {
 
       <div className="proj-desc">
         <p>
-        &emsp;&emsp;For my senior capstone, I designed and built a compiler that handles a Java-like language.
+        For my senior capstone, I designed and built a compiler that handles a Java-like language.
         Below is some source code, and the AST representing the source code as a data structure.
         The source is read by a series of visitors, and output in <i>DOT</i> (GraphViz) syntax.
         The colors are a byproduct of my semantic analysis and type checking - when a node has been validated for type correctness it's marked green. 
         Generally I don't mark the higher level statements (cout, while) because they're validated elsewhere.
         </p>
         <p>
-        &emsp;&emsp;This project was extremely demanding. The semester prior, I built an assembler and a virtual machine.
+        This project was extremely demanding. The semester prior, I built an assembler and a virtual machine.
         The assembler reads an ARM-like assembly and (if valid) outputs hexadecimal bytecode. This bytcode is then read 
         and executed by the VM. For the final project, we needed to process source code and eventually
         output working assembly code that we could run through our assembler/vm.

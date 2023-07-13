@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
       < Header
           myName='Andrew Pritchett' 
-          myTitle='Software Developer'
+          myTitle='Data Scientist'
       />
       < About />
       < RadarChart />

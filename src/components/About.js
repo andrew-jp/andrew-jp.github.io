@@ -4,6 +4,21 @@ import '../styles/About.css'
 
 import Job from './Job.js';
 
+
+const List = (props) => {
+  return (
+    <li className='sub-list'>
+    <i className='job-title'>{props.title}</i>
+    <ul className='sub-sub-list'>
+      {props.experience.map(exp => (
+        <li className='list-item'>{exp}</li>
+      ))}
+    </ul>
+  </li>
+  );
+}
+
+
 const About = () => {
   const targetRef = useRef(null);
 
@@ -61,16 +76,20 @@ const About = () => {
           <h1>About me</h1>  
           <div className='about-me-inner'>
             <p>
-              &emsp;&emsp;I'm a recent CS graduate in search of a career in software. I possess a wide range
-              of skills, I'm an exceptional problem solver, and I'm easy to work with. My favorite
-              language is Python, altough I love Java too. This site was built using Node.js/React.js.
-              While I'm certainly capable of front-end work given a design, what I really enjoy is
-              complex backend work.
+              I'm a recent CS graduate in search of a career in environmental data science.
+              I possess a wide range of skills, I'm an exceptional problem solver, and I'm easy to work with.
+              I've spent a lot of my life in the outdoors, and I've gained a
+              huge appreciation for our natural resources and environment, and hope to apply my skills
+              in the field, specifically to the fields of Marine Biology and Oceanography.
+              I'm currently in the job market, as well as applying to masters programs in Data Science.
             </p>
             <p>
-              &emsp;&emsp;Outside of my career interests, I'm an avid climber, skier, and cyclist.
+              Outside of my career interests, I'm an avid climber, skier, and cyclist.
               I'm a big fan of Star Wars, and all sci-fi in general. I'm easy to get along with, 
-              friendly, and great with teams.
+              friendly, and great with teams. I was born in the Bay Area, but moved to Utah when I was young
+              and have been here ever since. While the world class climbing and skiing has spoiled me,
+              my childhood experiences at the Monterey Bay Aquarium had a deep and lasting impact on me.
+              They're what drive me towards ocean science, even now.
             </p>
           </div>
         </div>
@@ -87,11 +106,16 @@ const About = () => {
                 experience={[
                   'Cum Laude',
                   '3.6 GPA',
-                  'Projects:',
+                ]}
+              />
+
+              <List
+                title='Projects'
+                experience={[
                   'Captone - built a compiler, assembler and virtual machine.',
                   'Python data analysis of 20 years of Iron Man Championship data.',
-                  'SQL database design and construction',
-                  '4 player chess - built in Python'
+                  'SQL database design and construction.',
+                  '4 player chess - built in Python.'
                 ]}
               />
             </ul>
