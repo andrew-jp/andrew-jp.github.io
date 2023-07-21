@@ -129,14 +129,13 @@ const About = () => {
           <div id='experience-inner'>
             <ul>
               <Job
-                title='Data Engineer and Manageer'
+                title='Software Developer'
                 company='Mountain West Wholesale'
                 time='3yrs'
                 experience={[
                   'Built application utilizing Python, Selenium, and MongoDB to gather valuable foreclosure data.',
-                  'Compiled and analyzed sales data to balance ordering by throughput – stocking more of what sells.',
-                  'Developed and implemented streamlined warehouse processes to reduce waste and increase inventory tracking.',
-                  'Boosted sales 15% qoq using modern web marketing tactics and toolkits.'
+                  'Assisted in development of company website - improved forms and menus for usability, implemented designs.',
+                  'Designed and implemented C#/SQL inventory tracker to improve accountability and user-friendliness.',
                 ]}
               />
 
