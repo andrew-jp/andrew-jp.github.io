@@ -76,12 +76,11 @@ const About = () => {
           <h1>About me</h1>  
           <div className='about-me-inner'>
             <p>
-              I'm a recent CS graduate in search of a career in environmental data science.
-              I possess a wide range of skills, I'm an exceptional problem solver, and I'm easy to work with.
-              I've spent a lot of my life in the outdoors, and I've gained a
-              huge appreciation for our natural resources and environment, and hope to apply my skills
-              in the field, specifically to the fields of Marine Biology and Oceanography.
-              I'm currently in the job market, as well as applying to masters programs in Data Science.
+              I'm a recent CS graduate in search of a career in data science or software development.
+              I possess a wide range of skills, I'm an exceptional problem solver, and I'm great with teams.
+              I have a passion for data, and have always enjoyed Pythons powerful ability to process
+              data, whether I was solving a small problem or a doing large analysis. Finding a career
+              where I get to play with interesting data and write code is my goal.
             </p>
             <p>
               Outside of my career interests, I'm an avid climber, skier, and cyclist.
@@ -129,13 +128,13 @@ const About = () => {
           <div id='experience-inner'>
             <ul>
               <Job
-                title='Software Developer'
+                title='Manager and IT'
                 company='Mountain West Wholesale'
                 time='3yrs'
                 experience={[
                   'Built application utilizing Python, Selenium, and MongoDB to gather valuable foreclosure data.',
-                  'Assisted in development of company website - improved forms and menus for usability, implemented designs.',
-                  'Designed and implemented C#/SQL inventory tracker to improve accountability and user-friendliness.',
+                  'Utilized data visualization with Python, Excel, and Quickbooks to provide business insights.',
+                  'Supervised all IT infrastructure - basic network setup, antivirus, installations and setups.'
                 ]}
               />
 
